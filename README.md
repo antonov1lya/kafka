@@ -17,7 +17,7 @@
 - Скачайте docker образ kafka: `docker pull bitnami/kafka`
 ## Запуск
 - Поднимите контейнер: `docker-compose up -d`
-- Запустите по порядку скрипты в отдельных терминах:
+- Запустите по порядку скрипты в отдельных терминалах:
 ```
 python3 src/data_miner.py
 python3 src/model_training.py
