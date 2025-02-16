@@ -13,4 +13,12 @@
 
 - корреляционный график между продолжительностью поездки и расстоянием <figure><img src="images/correlation.jpg" alt="drawing" width="500"/></figure>
 ## Запуск
-todo
+- Установите зависимости из requirements: `pip install -r requirements.txt`
+- Скачайте docker образ kafka: `docker pull bitnami/kafka`
+- Поднимите контейнер: `docker-compose up -d`
+- Запустите по порядку скрипты в отдельных терминах:
+```
+python3 src/data_miner.py
+python3 src/model_training.py
+streamlit run src/visualizer.py
+```
